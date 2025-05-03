@@ -1,0 +1,159 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+  }
+  
+  
+  nav {
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 3vh;
+  }
+  
+  .logo {
+    display: flex;
+  }
+  
+  .logo img {
+    margin: 12px;
+    margin-right: 40px!important;
+    width:3cap;
+    display: inline;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul li {
+    margin-left: 5px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 12px;
+    display: block;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropbtn {
+    background-color: transparent;
+    color: #333;
+    padding: 8px 12px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 3vh;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    left: 0;
+    width: 12vw;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 15px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 3vh;
+    line-height: 1.5;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .contact-button a {
+    background-color: rgb(36, 33, 33);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+  
+  .contact-button a:hover {
+    background-color: transparent;
+    color: black;
+    text-decoration: underline;
+  }
+  
+  
+  .main-section {
+      background-color: rgb(159, 155, 155);
+    }
+  .pendaftaran{
+    margin: 5px auto ;
+    padding:  9vh 40px;
+    color: black;
+    font-size: 3vh;
+    max-width: 80%;
+    height: 100%;
+  }
+  
+    h1 {
+      font-size: 6vh;
+      text-align: center;
+      margin-bottom: 4vw;
+    }
+    .form-control{
+      font-size: 3vh;
+    }
+  
+    .toggle{
+      text-align: right;
+      padding-right: 1vw;
+      border-radius: 5px!important;
+    }
+    .dropdown-menu{
+      font-size: 3vh;
+    }
+    .submit{
+      margin-top: 1vh;
+      background-color: rgb(36, 33, 33);
+    color: white;
+    padding: 10px 2vw;
+    border-radius: 50px;
+    }
+    .submit:hover{
+      background-color:white;
+    color:  rgb(36, 33, 33);
+    border: none;
+    text-decoration: underline;
+    }
