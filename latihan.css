@@ -128,22 +128,57 @@ body {
   }
   
     h1 {
-      font-size: 6vh;
+      font-size: 5vh;
       text-align: center;
       margin-bottom: 4vw;
     }
     .form-control{
       font-size: 3vh;
     }
+    #date{
+      display: flexbox;
+      justify-content: space-between;
+      max-width:max-content;
+      align-items: center;
+    max-width: 100%;
+    margin: 1vh auto 1vh;
+    }
+    
   
-    .toggle{
+    /* .toggle{
       text-align: right;
       padding-right: 1vw;
       border-radius: 5px!important;
     }
     .dropdown-menu{
       font-size: 3vh;
+    } */
+    
+    .checkbox-grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2vh 4vw; 
+      margin: 10px auto 40px;
     }
+    .checkbox-grid input[type="checkbox"] {
+      transform: scale(4);
+      cursor: pointer;
+      margin-right: 4vw;
+    }
+    
+    .checkbox-grid label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: normal;
+      font-size: 3vh;
+    }
+    input[type="file"] {
+      padding: 10px;
+      font-size: 3vh;
+      margin-bottom: 2vh;
+    }
+  
     .submit{
       margin-top: 1vh;
       background-color: rgb(36, 33, 33);
