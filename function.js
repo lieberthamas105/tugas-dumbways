@@ -33,19 +33,36 @@ function getData(event) {
 
 function renderProjects() {
   let content = document.getElementById("content");
-  content.innerHTML = "";
 
-  for (let i = 0; i < projects.length; i++) {
-    content.innerHTML += `
-      <div class="card mb-3" style="width: 60vw;">
-        <img src="${projects[i].imageURL}" class="card-img-top" alt="${projects[i].name}">
+  const projectsHTML = projects
+    .map(project => `
+      <div class="card mb-3" style="width: 8vw;">
+        <img src="${project.imageURL}" class="card-img-top" alt="${project.name}">
         <div class="card-body">
-          <h3 class="card-title">${projects[i].name}</h3>
-          <p class="card-text"><strong>${projects[i].startDate}</strong> - <strong>${projects[i].endDate}</strong></p>
-          <p class="card-text">${projects[i].description}</p>
-          <p class="card-text">Tech: ${projects[i].technologies.join(", ")}</p>
+          <h3 class="card-title" style="font-size: 3vh;">${project.name}</h3>
+          <p class="card-text" style="font-size: 1vh;"><strong>${project.startDate}</strong> - <strong>${project.endDate}</strong></p>
+          <p class="card-text" style="font-size: 1vh;">${project.description}</p>
+          <p class="card-text" style="font-size: 1vh;">Tech: ${project.technologies.join(", ")}</p>
         </div>
       </div>
-    `;
-  }
+    `)
+    .join("");
+
+  content.innerHTML = projectsHTML;
+
 }
+// content.innerHTML = "";
+//   for (let i = 0; i < projects.length; i++) {
+//     content.innerHTML += `
+//       <div class="card mb-3" style="width: 60vw;">
+//         <img src="${projects[i].imageURL}" class="card-img-top" alt="${projects[i].name}">
+//         <div class="card-body">
+//           <h3 class="card-title">${projects[i].name}</h3>
+//           <p class="card-text"><strong>${projects[i].startDate}</strong> - <strong>${projects[i].endDate}</strong></p>
+//           <p class="card-text">${projects[i].description}</p>
+//           <p class="card-text">Tech: ${projects[i].technologies.join(", ")}</p>
+//         </div>
+//       </div>
+//     `;
+//   }
+// }
